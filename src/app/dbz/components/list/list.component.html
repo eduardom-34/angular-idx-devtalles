@@ -7,7 +7,10 @@
     let isEven = even;
     let isOdd = odd;
     "
-    class="list-group-item">
+    class="list-group-item"
+    [ngClass]="{ 'list-group-item-dark': isLast,
+    'list-group-item-primary': isEven,
+    }">
 
 
     <span class="text-primary"> {{ i + 1 }} </span>
@@ -17,9 +20,6 @@
     <strong>Power: </strong>
 
     <span>{{ character.power }}</span>
-
-    <span>Es Par: {{ isEven }} </span>
-    <span>Es Impar: {{ isOdd }} </span>
 
 </li>
 </ul>
