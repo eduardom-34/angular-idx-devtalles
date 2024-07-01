@@ -8,7 +8,8 @@
     
     <div class="col">
         <!-- onDelete -->
-        <dbz-list [characterList]="characters"></dbz-list>
+        <dbz-list [characterList]="characters"
+                    (onDelete)="onDeleteCharacter($event)"></dbz-list>
     </div>
     
     

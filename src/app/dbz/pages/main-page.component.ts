@@ -24,8 +24,8 @@ onNewCharacter( character: Character ): void {
   this.characters.push(character);
 }
 
-// onDeleteCharacter( xxx: xxx){
-//   this.characters.splice(xxx, 1);
-// }
+onDeleteCharacter( index: number){
+  this.characters.splice(index, 1);
+}
 
 }
