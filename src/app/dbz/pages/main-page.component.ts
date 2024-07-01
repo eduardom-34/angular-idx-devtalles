@@ -17,8 +17,15 @@ export class MainPageComponent {
   }, {
     name: 'vegeta',
     power: 7500
-  }
+  },
 ];
-;
+
+onNewCharacter( character: Character ): void {
+  this.characters.push(character);
+}
+
+// onDeleteCharacter( xxx: xxx){
+//   this.characters.splice(xxx, 1);
+// }
 
 }
